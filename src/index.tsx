@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App';
+import { AppConfigContextProvider } from './components/hooks/useConfig';
+import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <AppConfigContextProvider>
+      <App />
+    </AppConfigContextProvider>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
