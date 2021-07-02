@@ -10,13 +10,13 @@ Your task, should you accept it, will consist of two parts.
 
 ## Part 1
 
-Do a code review on existing code. We want to know, what you think about this code, what you think is wrong with it, what you think is good. What would you do differently?
+Do a code review on existing code. We want to know what you think about this code, what you think is wrong with it, what you think is good. What would you do differently?
 
 Do not focus on CRA parts, as those are not important. Focus mainly on TypeScript and JavaScript inside `src/components`.
 
 ## Part 2
 
-We planned on adding new command. This command should allow user to search for an object on backend by text and do something with it. What to do is not important, the interesting part is about searching for the item and showing user options to pick from.
+We planned on adding a new command. This command should allow the user to search for an object on the backend by text and do something with it. What to do is not important, the interesting part is about searching for the item and showing user options to pick from.
 
 For development, you can use `yarn dev-server` to run local API on port `3001` with endpoint:
 
@@ -42,8 +42,10 @@ $ curl http://localhost:3001/birds?q=cow
 ]
 ```
 
-These options should be offered to user to pick from. The action on selecting one of options is not important, but there have to be some action (ie. showing `alert()` with title of selected bird).
+These options should be offered to the user to pick from. The action on selecting one of the options is not important, but there has to be some action (ie. showing `alert()` with title of selected bird).
 
 The `<Omnibar />` component was not written with this command in mind, so you might need to add or even rewrite some parts of it.
 
 Application itself is standard CRA, so `yarn start` will launch it on port `3000`.
+
+We wish you good luck and look forward to your solution!
